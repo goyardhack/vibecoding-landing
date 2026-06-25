@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://goyardhack.github.io/vibecoding-landing/sitemap.xml
