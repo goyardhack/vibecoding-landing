@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Научись вайбкодингу с нуля: сайты, Telegram-боты и Cursor с AI. 10 уроков бесплатно, задание каждый день, сертификат. Практика вместо теории — старт за 1 клик в Telegram.">
+  <meta name="keywords" content="вайбкодинг, vibecoding, vibecoding курс, научиться вайбкодингу, cursor обучение, сайты с ai, telegram бот курс, вайбкодинг с нуля">
+  <title>VibeCoding — вайбкодинг с нуля: сайты, боты, Cursor | 10 уроков бесплатно</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VibeCoding — вайбкодинг с нуля без зубрёжки кода">
+  <meta property="og:description" content="Курс-наставник в Telegram: лендинги, боты, промпты Cursor. 10 уроков бесплатно — начни сегодня.">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="VibeCoding — вайбкодинг с нуля">
+  <meta name="twitter:description" content="Сайты и боты с AI. 10 уроков бесплатно в Telegram.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <canvas id="code-bg" aria-hidden="true"></canvas>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo">
+        <span class="nav__bracket">{</span>VibeCoding<span class="nav__bracket">}</span>
+      </a>
+      <a href="https://t.me/vibecodecursor_bot?start=landing" class="glitch-btn glitch-btn--sm glitch-btn--solid nav__cta" target="_blank" rel="noopener">
+        <span class="glitch-btn__layer glitch-btn__layer--r" aria-hidden="true">Telegram</span>
+        <span class="glitch-btn__layer glitch-btn__layer--b" aria-hidden="true">Telegram</span>
+        <span class="glitch-btn__text">Telegram</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__content container">
+        <p class="hero__tag fade-up" data-delay="0">// курс-наставник в Telegram</p>
+        <h1 class="hero__title fade-up" data-delay="1">VibeCoding — сайты и боты с AI</h1>
+        <p class="hero__subtitle fade-up" data-delay="2">Практика с Cursor, не лекции на 100 часов. 10 уроков бесплатно.</p>
+        <div class="hero__cta-wrap fade-up" data-delay="3">
+          <a href="https://t.me/vibecodecursor_bot?start=landing" class="glitch-btn glitch-btn--lg glitch-btn--hero" target="_blank" rel="noopener">
+            <span class="glitch-btn__layer glitch-btn__layer--r" aria-hidden="true">Начать бесплатно</span>
+            <span class="glitch-btn__layer glitch-btn__layer--b" aria-hidden="true">Начать бесплатно</span>
+            <span class="glitch-btn__text">Начать бесплатно</span>
+          </a>
+        </div>
+        <p class="hero__hint fade-up" data-delay="4"><code>/start</code> → «Продолжить обучение» → урок 1</p>
+        <div class="hero__badges fade-up" data-delay="5">
+          <span class="badge">20 уроков</span>
+          <span class="badge">6 модулей</span>
+          <span class="badge">Задание дня</span>
+          <span class="badge">Сертификат</span>
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- 2–7. Cards -->
+    <section class="cards-section container" id="cards">
+      <div class="cards-grid" id="cards-accordion">
+
+        <!-- 02 Проблема -->
+        <article class="card reveal" data-card="02">
+          <button class="card__header" type="button" aria-expanded="false">
+            <span class="card__num">02</span>
+            <span class="card__title">// Проблема</span>
+            <span class="card__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="card__body">
+            <div class="card__content">
+              <div class="pain-grid">
+                <div class="pain-item">
+                  <span class="pain-item__icon">⚡</span>
+                  <h3>Паралич выбора</h3>
+                  <p>Куча курсов — непонятно с чего начать и что реально пригодится.</p>
+                </div>
+                <div class="pain-item">
+                  <span class="pain-item__icon">📖</span>
+                  <h3>Теория без результата</h3>
+                  <p>Читаешь про код месяцами — а своего проекта нет.</p>
+                </div>
+                <div class="pain-item">
+                  <span class="pain-item__icon">🛑</span>
+                  <h3>Застреваешь на ошибках</h3>
+                  <p>npm не работает, localhost не открывается — некому спросить.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Решение -->
+        <article class="card reveal" data-card="03">
+          <button class="card__header" type="button" aria-expanded="false">
+            <span class="card__num">03</span>
+            <span class="card__title">// Решение</span>
+            <span class="card__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="card__body">
+            <div class="card__content">
+              <div class="formula">
+                <span class="formula__step">Практика</span>
+                <span class="formula__arrow">→</span>
+                <span class="formula__step">Результат</span>
+                <span class="formula__arrow">→</span>
+                <span class="formula__step">Объяснение</span>
+                <span class="formula__arrow">→</span>
+                <span class="formula__step">Закрепление</span>
+              </div>
+              <ul class="solution-list">
+                <li>Учишься в <strong>Cursor</strong> с AI — Agent, Ask, Plan</li>
+                <li>Всё в <strong>Telegram</strong> — не нужен отдельный сайт курса</li>
+                <li>Кнопка <strong>«Продолжить обучение»</strong> — сразу к нужному уроку</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 Что в боте -->
+        <article class="card reveal" data-card="04">
+          <button class="card__header" type="button" aria-expanded="false">
+            <span class="card__num">04</span>
+            <span class="card__title">// Что в боте</span>
+            <span class="card__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="card__body">
+            <div class="card__content">
+              <div class="features-grid">
+                <div class="feature"><span class="feature__icon">📚</span><strong>Обучение</strong><p>6 модулей, 20 уроков с практикой</p></div>
+                <div class="feature"><span class="feature__icon">▶️</span><strong>Продолжить</strong><p>Следующий непройденный урок в один тап</p></div>
+                <div class="feature"><span class="feature__icon">📊</span><strong>Прогресс</strong><p>Счётчик уроков и процент прохождения</p></div>
+                <div class="feature"><span class="feature__icon">📅</span><strong>Задание дня</strong><p>365 заданий, уведомление в 10:00 МСК</p></div>
+                <div class="feature"><span class="feature__icon">🎯</span><strong>Промпты</strong><p>6 готовых промптов для Cursor</p></div>
+                <div class="feature"><span class="feature__icon">🛠</span><strong>FAQ ошибок</strong><p>npm, localhost, токены — пошагово</p></div>
+                <div class="feature"><span class="feature__icon">⭐</span><strong>PRO</strong><p>10 платных уроков + все промпты</p></div>
+                <div class="feature"><span class="feature__icon">🏆</span><strong>Сертификат</strong><p>После 20 уроков — через @amgdurov</p></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 Программа -->
+        <article class="card reveal" data-card="05">
+          <button class="card__header" type="button" aria-expanded="false">
+            <span class="card__num">05</span>
+            <span class="card__title">// Программа</span>
+            <span class="card__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="card__body">
+            <div class="card__content">
+              <div class="modules" id="modules-accordion">
+                <div class="module">
+                  <button class="module__header" type="button" aria-expanded="false">
+                    <span>🚀 Старт — VibeCoding</span>
+                    <span class="module__chevron"></span>
+                  </button>
+                  <div class="module__body">
+                    <ul class="lesson-list">
+                      <li><span class="tag tag--free">FREE</span> Что такое VibeCoding</li>
+                      <li><span class="tag tag--free">FREE</span> Что нужно установить</li>
+                      <li><span class="tag tag--pro">PRO</span> Как учиться правильно</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="module">
+                  <button class="module__header" type="button" aria-expanded="false">
+                    <span>🖥️ Cursor — главный инструмент</span>
+                    <span class="module__chevron"></span>
+                  </button>
+                  <div class="module__body">
+                    <ul class="lesson-list">
+                      <li><span class="tag tag--free">FREE</span> Glass vs Editor Window</li>
+                      <li><span class="tag tag--free">FREE</span> Agent, Ask, Plan, Debug</li>
+                      <li><span class="tag tag--free">FREE</span> Горячие клавиши и @-контекст</li>
+                      <li><span class="tag tag--pro">PRO</span> Как писать запросы AI</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="module">
+                  <button class="module__header" type="button" aria-expanded="false">
+                    <span>🌐 Первый сайт</span>
+                    <span class="module__chevron"></span>
+                  </button>
+                  <div class="module__body">
+                    <ul class="lesson-list">
+                      <li><span class="tag tag--free">FREE</span> HTML за 10 минут</li>
+                      <li><span class="tag tag--free">FREE</span> CSS и переменные :root</li>
+                      <li><span class="tag tag--free">FREE</span> Лендинг: структура блоков</li>
+                      <li><span class="tag tag--pro">PRO</span> От файла к настоящему сайту</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="module">
+                  <button class="module__header" type="button" aria-expanded="false">
+                    <span>📱 Telegram-боты</span>
+                    <span class="module__chevron"></span>
+                  </button>
+                  <div class="module__body">
+                    <ul class="lesson-list">
+                      <li><span class="tag tag--free">FREE</span> Зачем боты и что они умеют</li>
+                      <li><span class="tag tag--free">FREE</span> BotFather и первый бот</li>
+                      <li><span class="tag tag--pro">PRO</span> Кнопки и уроки в боте</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="module">
+                  <button class="module__header" type="button" aria-expanded="false">
+                    <span>💰 Заработок</span>
+                    <span class="module__chevron"></span>
+                  </button>
+                  <div class="module__body">
+                    <ul class="lesson-list">
+                      <li><span class="tag tag--pro">PRO</span> Портфолио новичка</li>
+                      <li><span class="tag tag--pro">PRO</span> Где искать первых клиентов</li>
+                      <li><span class="tag tag--pro">PRO</span> Как продавать услуги</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="module">
+                  <button class="module__header" type="button" aria-expanded="false">
+                    <span>⚡ PRO-инструменты</span>
+                    <span class="module__chevron"></span>
+                  </button>
+                  <div class="module__body">
+                    <ul class="lesson-list">
+                      <li><span class="tag tag--pro">PRO</span> Python для автоматизации</li>
+                      <li><span class="tag tag--pro">PRO</span> API и AI-сервисы</li>
+                      <li><span class="tag tag--pro">PRO</span> Собери свой продукт</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06 Навыки -->
+        <article class="card reveal" data-card="06">
+          <button class="card__header" type="button" aria-expanded="false">
+            <span class="card__num">06</span>
+            <span class="card__title">// Навыки</span>
+            <span class="card__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="card__body">
+            <div class="card__content">
+              <ul class="skills-list" id="skills-list">
+                <li class="skill-item"><span class="skill-check">✓</span> <strong>Cursor</strong> — Agent, Ask, @-контекст, горячие клавиши</li>
+                <li class="skill-item"><span class="skill-check">✓</span> <strong>Лендинги</strong> — HTML/CSS, структура блоков, деплой в интернет</li>
+                <li class="skill-item"><span class="skill-check">✓</span> <strong>Telegram-боты</strong> — aiogram, меню, SQLite, Bothost</li>
+                <li class="skill-item"><span class="skill-check">✓</span> <strong>Промпты</strong> — структурированные запросы к AI, не «сделай сайт»</li>
+                <li class="skill-item"><span class="skill-check">✓</span> <strong>Отладка</strong> — npm, localhost, токены, деплой самостоятельно</li>
+                <li class="skill-item"><span class="skill-check">✓</span> <strong>Заработок</strong> — портфолио, первые клиенты, продажа услуг</li>
+              </ul>
+              <p class="skills-note">+ 6 готовых промптов под типовые проекты</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 07 Тарифы -->
+        <article class="card reveal" data-card="07">
+          <button class="card__header" type="button" aria-expanded="false">
+            <span class="card__num">07</span>
+            <span class="card__title">// Тарифы</span>
+            <span class="card__chevron" aria-hidden="true"></span>
+          </button>
+          <div class="card__body">
+            <div class="card__content">
+              <div class="pricing">
+                <div class="pricing__row">
+                  <span class="pricing__name">Старт</span>
+                  <span class="pricing__price pricing__price--free">Бесплатно</span>
+                  <span class="pricing__desc">10 уроков, задание дня, FAQ, прогресс</span>
+                </div>
+                <div class="pricing__row pricing__row--highlight">
+                  <span class="pricing__name">PRO</span>
+                  <span class="pricing__price">450 ★</span>
+                  <span class="pricing__desc">Все 20 уроков + 6 промптов навсегда</span>
+                </div>
+                <div class="pricing__row">
+                  <span class="pricing__name">Промпты</span>
+                  <span class="pricing__price">250 ★</span>
+                  <span class="pricing__desc">6 промптов без PRO-уроков</span>
+                </div>
+                <div class="pricing__row">
+                  <span class="pricing__name">Один урок</span>
+                  <span class="pricing__price">50 ★</span>
+                  <span class="pricing__desc">Разовая покупка одного PRO-урока</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 9. FAQ Terminal -->
+    <section class="faq-section container reveal" id="faq">
+      <h2 class="section-title"><span class="section-title__prefix">//</span> FAQ</h2>
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">vibecoding@faq — bash</span>
+        </div>
+        <div class="terminal__body">
+          <div class="terminal__commands" id="faq-commands">
+            <button class="terminal__cmd" type="button" data-cmd="experience">? experience</button>
+            <button class="terminal__cmd" type="button" data-cmd="time">? time</button>
+            <button class="terminal__cmd" type="button" data-cmd="pc">? pc</button>
+            <button class="terminal__cmd" type="button" data-cmd="payment">? payment</button>
+          </div>
+          <div class="terminal__output" id="faq-output">
+            <p class="terminal__line"><span class="terminal__prompt">vibecoding@faq:~$</span> выбери вопрос слева</p>
+            <p class="terminal__line terminal__cursor-line" id="faq-cursor"><span class="terminal__cursor">_</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Finale -->
+    <section class="finale container reveal" id="finale">
+      <p class="finale__text">10 уроков бесплатно. Один клик — и ты внутри.</p>
+      <a href="https://t.me/vibecodecursor_bot?start=landing" class="glitch-btn glitch-btn--lg glitch-btn--solid" target="_blank" rel="noopener">
+        <span class="glitch-btn__layer glitch-btn__layer--r" aria-hidden="true">Открыть в Telegram</span>
+        <span class="glitch-btn__layer glitch-btn__layer--b" aria-hidden="true">Открыть в Telegram</span>
+        <span class="glitch-btn__text">Открыть в Telegram</span>
+      </a>
+      <p class="finale__support">Вопросы → <a href="https://t.me/amgdurov" target="_blank" rel="noopener">@amgdurov</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© VibeCoding</span>
+      <a href="https://t.me/amgdurov" target="_blank" rel="noopener">Поддержка @amgdurov</a>
+    </div>
+  </footer>
+
+  <script src="js/codeBackground.js"></script>
+  <script src="js/glitchButton.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/terminalFaq.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/scrollReveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
+
+@keyframes glitchShift {
+  0%, 88%, 100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  90% {
+    opacity: 0.35;
+    transform: translate(-2px, 1px);
+  }
+  92% {
+    opacity: 0.35;
+    transform: translate(2px, -1px);
+  }
+  94% {
+    opacity: 0.2;
+    transform: translate(-1px, 0);
+  }
+}
+
+@keyframes glitchShiftAlt {
+  0%, 88%, 100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  91% {
+    opacity: 0.35;
+    transform: translate(2px, 1px);
+  }
+  93% {
+    opacity: 0.35;
+    transform: translate(-2px, -1px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(124, 58, 237, 0.2); }
+  50% { box-shadow: 0 0 35px rgba(124, 58, 237, 0.45); }
+}
+
+.glitch-btn--animating .glitch-btn__layer--r {
+  animation: glitchShift 4s infinite;
+}
+
+.glitch-btn--animating .glitch-btn__layer--b {
+  animation: glitchShiftAlt 4s infinite;
+}
+
+.hero__cta-wrap .glitch-btn--hero {
+  animation: pulseGlowHero 2.5s ease-in-out infinite;
+}
+
+@keyframes pulseGlowHero {
+  0%, 100% {
+    box-shadow:
+      0 0 35px rgba(124, 58, 237, 0.55),
+      0 4px 24px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 0 60px rgba(167, 139, 250, 0.85),
+      0 4px 28px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
